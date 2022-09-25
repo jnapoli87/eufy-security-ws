@@ -1,4 +1,4 @@
-import { CommandName, PropertyName } from "eufy-security-client";
+import { CommandName, PropertyName } from "eufy-security-client-fork";
 import { PanTiltDirection } from "eufy-security-client/build/p2p/types";
 
 import { IncomingCommandBase } from "../incoming_message_base";
