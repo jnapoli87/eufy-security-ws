@@ -1,4 +1,4 @@
-import { Device, IndexedProperty, PropertyName } from "eufy-security-client"
+import { Device, IndexedProperty, PropertyName } from "eufy-security-client-fork"
 
 export interface DevicePropertiesSchema0 {
     name: string;
