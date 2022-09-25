@@ -1,4 +1,4 @@
-import { AlarmEvent, CustomData } from "eufy-security-client";
+import { AlarmEvent, CustomData } from "eufy-security-client-fork";
 
 import { JSONValue, OutgoingBaseEvent } from "../outgoing_message";
 
