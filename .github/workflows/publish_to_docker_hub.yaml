@@ -4,7 +4,7 @@ name: "Publish to Docker Hub"
 on:
   push:
     branches:
-      - master
+      - develop
     tags:
       - "*"
 
@@ -20,7 +20,7 @@ jobs:
       - name: Prepare
         id: prep
         run: |
-          DOCKER_IMAGE=bropat/eufy-security-ws
+          DOCKER_IMAGE=jnapoli87/eufy-security-ws-fork
           VERSION=noop
           if [[ $GITHUB_REF == refs/tags/* ]]; then
             VERSION=${GITHUB_REF#refs/tags/}
@@ -49,7 +49,7 @@ jobs:
         uses: docker/login-action@v1
         with:
           username: jnapoli87
-          password: dckr_pat_3OeBl8Ys3xHuqk_4urV_Fzv0Hos
+          password: dckr_pat_A9J0WFwvlfCSZ5kIzZoKWGWRrVE
 
       - name: Build and push
         id: docker_build
