@@ -1,4 +1,4 @@
-import { EventRecordResponse } from "eufy-security-client";
+import { EventRecordResponse } from "eufy-security-client-fork";
 import { TLogLevelName } from "tslog";
 
 import { DriverCommand } from "./command";
