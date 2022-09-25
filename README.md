@@ -1,4 +1,4 @@
-![Logo](docs/_media/eufy-security-ws.png)
+![Logo](docs/_media/eufy-security-ws.png) 
 
 # eufy-security-ws
 
