@@ -1,5 +1,5 @@
 {
-  "name": "eufy-security-ws",
+  "name": "eufy-security-ws-fork",
   "version": "1.0.0-rc.1",
   "description": "Node WebSocket server implementation to integrate Eufy Security devices",
   "main": "dist/lib/index.js",
@@ -19,8 +19,8 @@
     "build:ts": "tsc -p ."
   },
   "author": {
-    "name": "bropat",
-    "email": "patrick.broetto@gmail.com"
+    "name": "asdf",
+    "email": "asdf@gmail.com"
   },
   "license": "MIT",
   "keywords": [
@@ -38,7 +38,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/bropat/eufy-security-ws"
+    "url": "https://github.com/jnapoli87/eufy-security-ws"
   },
   "engines": {
     "node": ">=14.18.0"
