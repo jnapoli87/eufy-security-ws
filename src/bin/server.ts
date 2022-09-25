@@ -3,7 +3,7 @@
 import { resolve } from "path";
 import { Command, Option } from "commander";
 import { Logger } from "tslog";
-import { EufySecurity, EufySecurityConfig } from "eufy-security-client"
+import { EufySecurity, EufySecurityConfig } from "eufy-security-client-fork"
 
 import { EufySecurityServer } from "../lib/server";
 
