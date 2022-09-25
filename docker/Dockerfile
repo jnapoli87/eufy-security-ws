@@ -10,7 +10,7 @@ COPY --from=build /tmp/docker/run.sh ./run.sh
 COPY --from=build /tmp/package.json ./package.json
 COPY --from=build /tmp/package-lock.json ./package-lock.json
 RUN apk add --no-cache jq \
-  && npm ci --only=production
+  && npm install --production
 EXPOSE 3000
 VOLUME ["/data"]
 CMD [ "/usr/src/app/run.sh" ]
