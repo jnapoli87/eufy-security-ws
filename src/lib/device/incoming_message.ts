@@ -1,5 +1,5 @@
 import { CommandName, PropertyName } from "eufy-security-client-fork";
-import { PanTiltDirection } from "eufy-security-client/build/p2p/types";
+import { PanTiltDirection } from "eufy-security-client-fork/build/p2p/types";
 
 import { IncomingCommandBase } from "../incoming_message_base";
 import { DeviceCommand } from "./command";
