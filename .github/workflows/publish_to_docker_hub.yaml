@@ -4,7 +4,7 @@ name: "Publish to Docker Hub"
 on:
   push:
     branches:
-      - develop
+      - master
     tags:
       - "*"
 
@@ -20,9 +20,8 @@ jobs:
       - name: Prepare
         id: prep
         run: |
-          DOCKER_IMAGE=jnapoli87/eufy-security-ws
+          DOCKER_IMAGE=bropat/eufy-security-ws
           VERSION=noop
-
           if [[ $GITHUB_REF == refs/tags/* ]]; then
             VERSION=${GITHUB_REF#refs/tags/}
           elif [[ $GITHUB_REF == refs/heads/dev ]]; then
@@ -30,18 +29,15 @@ jobs:
           elif [[ $GITHUB_REF == refs/heads/master ]]; then
             VERSION=latest
           fi
-
           TAGS="${DOCKER_IMAGE}:${VERSION}"
           if [[ $VERSION =~ ^v[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}$ ]]; then
             MINOR=${VERSION%.*}
             MAJOR=${MINOR%.*}
             TAGS="$TAGS,${DOCKER_IMAGE}:${MINOR},${DOCKER_IMAGE}:${MAJOR},${DOCKER_IMAGE}:latest"
           fi
-
           echo ::set-output name=version::${VERSION}
           echo ::set-output name=tags::${TAGS}
           echo ::set-output name=created::$(date -u +'%Y-%m-%dT%H:%M:%SZ')
-
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v1
 
@@ -52,8 +48,8 @@ jobs:
       - name: Login to DockerHub
         uses: docker/login-action@v1
         with:
-          username: ${{ secrets.DOCKER_HUB_USERNAME }}
-          password: ${{ secrets.DOCKER_HUB_TOKEN }}
+          username: jnapoli87
+          password: dckr_pat_3OeBl8Ys3xHuqk_4urV_Fzv0Hos
 
       - name: Build and push
         id: docker_build
