@@ -1,4 +1,4 @@
-import { EufySecurity } from "eufy-security-client";
+import { EufySecurity } from "eufy-security-client-fork";
 
 import { Modify } from "../state";
 
