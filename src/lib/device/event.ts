@@ -1,4 +1,4 @@
-import { SmartSafeAlarm911Event, SmartSafeShakeAlarmEvent } from "eufy-security-client";
+import { SmartSafeAlarm911Event, SmartSafeShakeAlarmEvent } from "eufy-security-cliet-fork";
 
 import { JSONValue, OutgoingBaseEvent } from "../outgoing_message";
 
