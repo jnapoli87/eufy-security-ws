@@ -1,4 +1,4 @@
-import { Station, IndexedProperty, PropertyName } from "eufy-security-client"
+import { Station, IndexedProperty, PropertyName } from "eufy-security-client-fork"
 
 export interface StationPropertiesSchema0 {
     name: string;
