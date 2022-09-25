@@ -1,4 +1,4 @@
-import { CommandName } from "eufy-security-client";
+import { CommandName } from "eufy-security-client-fork";
 
 import { StationCommand } from "./command";
 
