@@ -1,5 +1,5 @@
 import { CommandName, EufySecurity } from "eufy-security-client-fork";
-import { TalkbackStream } from "eufy-security-client/build/p2p/talkback";
+import { TalkbackStream } from "eufy-security-client-fork/build/p2p/talkback";
 
 import { DownloadAlreadyRunningError, DownloadNotRunningError, DownloadOnlyOneAtATimeError, LivestreamAlreadyRunningError, LivestreamNotRunningError, TalkbackAlreadyRunningError, TalkbackNotRunningError, TalkbackOnlyOneAtATimeError, UnknownCommandError } from "../error";
 import { Client } from "../server";
