@@ -1,4 +1,4 @@
-import { EufySecurity } from "eufy-security-client";
+import { EufySecurity } from "eufy-security-client-fork";
 
 import { DeviceState, dumpDevice } from "./device/state";
 import { DriverState, dumpDriver } from "./driver/state"
