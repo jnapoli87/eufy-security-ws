@@ -1,4 +1,4 @@
-import { DeviceType, PropertyName, Station } from "eufy-security-client"
+import { DeviceType, PropertyName, Station } from "eufy-security-client-fork"
 
 import { Modify } from "../state";
 
