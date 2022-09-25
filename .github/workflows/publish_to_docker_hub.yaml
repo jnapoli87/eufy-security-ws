@@ -49,7 +49,7 @@ jobs:
         uses: docker/login-action@v1
         with:
           username: jnapoli87
-          password: dckr_pat_-rXnAWjINbnEPB0K_YamKpeo4T8
+          password: dckr_pat_G68S_j7xOj9BQPGhqF50JgLKZEA
 
       - name: Build and push
         id: docker_build
