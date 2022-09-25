@@ -1,4 +1,4 @@
-import { Voices, CommandName } from "eufy-security-client";
+import { Voices, CommandName } from "eufy-security-client-fork";
 
 import { DeviceCommand } from "./command";
 
